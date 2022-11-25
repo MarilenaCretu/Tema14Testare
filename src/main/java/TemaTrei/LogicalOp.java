@@ -1,4 +1,4 @@
-package Tema14EX3;
+package TemaTrei;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -10,36 +10,20 @@ public class LogicalOp {
         list.set(position, number);
         System.out.println(list);
     }
-
-    //Exercitiul 2
-
-    public void addToList(List<Integer> list, int number) {
-        list.add(number);
-        System.out.print(list);
+    public void pare(List<Integer> list) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0) {
+                System.out.print(list.get(i)+" ");
+            }
+        }
+    }
+    public void sortare(List<Integer> list) {
+        for (int i = 0; i < list.size(); i++) {
+            Collections.sort(list);
+            System.out.print(list.get(i)+" ");
+        }
     }
 
-    //Exercitiul 3
 
-//    public int sortare(List<Integer> list) {
-//        double medie=0;
-//        int sum=0;
-//        for (int i = 0; i < list.size(); i++) {
-//            sum+=list.get(i);
-//        }
-//        System.out.println(sum);
-//        return sum;
-//    }
-   // public int tooList(List<Integer> list) {
-//        List<Integer> listSort=new List<Integer>(list.size());
-//        int[] firstArray = {2, 7, 9};
-//        int[] emptyArray = new int[firstArray.length];
-//        for (int i = 0, j = 0; i < list.size(); i++) {
-//            emptyArray[j] = firstArray[i];
-//            j++;
-//            System.out.print(emptyArray[i]+" ");
-//        }
-//        return emptyArray;
-//    }
- //   }
 
 }
